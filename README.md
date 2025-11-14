@@ -1,17 +1,29 @@
-# Testing and Debugging MERN Applications
+# MERN Bug Tracker — Week 6 Testing & Debugging Assignment
 
-This assignment focuses on implementing comprehensive testing strategies for a MERN stack application, including unit testing, integration testing, and end-to-end testing, along with debugging techniques.
+This project implements a complete **MERN application** with:
 
-## Assignment Overview
+- Unit testing  
+- Integration testing  
+- End-to-end testing  
+- Debugging tools  
+- Error handling  
+- React Error Boundaries  
+- MongoDB Memory Server  
 
-You will:
-1. Set up testing environments for both client and server
-2. Write unit tests for React components and server functions
-3. Implement integration tests for API endpoints
-4. Create end-to-end tests for critical user flows
-5. Apply debugging techniques for common MERN stack issues
+---
 
-## Project Structure
+# 🚀 Features
+
+### Users can:
+- Report new bugs  
+- View all bugs  
+- Update bug status  
+- Delete bugs  
+
+---
+
+# 🗂 Project Structure
+
 
 ```
 mern-testing/
@@ -36,52 +48,123 @@ mern-testing/
 └── package.json            # Project dependencies
 ```
 
-## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week6-Assignment.md` file
-4. Explore the starter code and existing tests
-5. Complete the tasks outlined in the assignment
+---
 
-## Files Included
+# ⚙️ Installation
 
-- `Week6-Assignment.md`: Detailed assignment instructions
-- Starter code for a MERN application with basic test setup:
-  - Sample React components with test files
-  - Express routes with test files
-  - Jest and testing library configurations
-  - Example tests for reference
+### 1. Clone repository  
+bash
+git clone <https://github.com/PLP-MERN-Stack-Development/testing-and-debugging-ensuring-mern-app-reliability-Jsews.git>
+cd mern-bug-tracker
 
-## Requirements
+2. Install backend
+cd server
+npm install
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Basic understanding of testing concepts
+3. Install frontend
+cd ../client
+npm install
 
-## Testing Tools
+▶️ Running the Application
+Start server
+cd server
+npm run dev
 
-- Jest: JavaScript testing framework
-- React Testing Library: Testing utilities for React
-- Supertest: HTTP assertions for API testing
-- Cypress/Playwright: End-to-end testing framework
-- MongoDB Memory Server: In-memory MongoDB for testing
+Start client
+cd client
+npm start
 
-## Submission
+🧪 Running Tests
+Server Tests
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Uses Jest + Supertest + MongoMemoryServer:
 
-1. Complete all required tests (unit, integration, and end-to-end)
-2. Achieve at least 70% code coverage for unit tests
-3. Document your testing strategy in the README.md
-4. Include screenshots of your test coverage reports
-5. Demonstrate debugging techniques in your code
+cd server
+npm test
 
-## Resources
+Client Tests
 
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
-- [Supertest Documentation](https://github.com/visionmedia/supertest)
-- [Cypress Documentation](https://docs.cypress.io/)
-- [MongoDB Testing Best Practices](https://www.mongodb.com/blog/post/mongodb-testing-best-practices) 
+Uses Jest + React Testing Library:
+
+cd client
+npm test
+
+End-to-End Tests 
+cd client
+npx cypress open
+
+🐞 Debugging Tools
+Frontend:
+
+Chrome DevTools
+
+React DevTools
+
+Console logging
+
+React Error Boundary (included)
+
+Backend:
+
+Node.js Inspector
+
+node --inspect src/server.js
+
+
+VS Code debugger
+
+Console logs in controllers
+
+Express error handler
+
+🛡 Error Handling
+Backend:
+
+Located in:
+
+server/src/middleware/errorHandler.js
+
+Frontend:
+
+Global React Error Boundary:
+
+client/src/components/ErrorBoundary.jsx
+
+📝 Testing Coverage
+
+You must include:
+
+Backend: Unit + integration tests
+
+Frontend: Unit + integration tests
+
+Minimum 70% coverage
+
+Generate coverage:
+
+Server:
+npm test -- --coverage
+
+Client:
+npm test -- --coverage
+
+📸 Include Screenshots
+
+Add screenshots of:
+
+Passing test cases
+
+Debugging in DevTools or inspector
+
+✅ Submission
+
+Commit and push everything:
+
+git add .
+git commit -m "Completed Week 6: Testing and Debugging MERN Application"
+git push
+
+Author
+
+Janice Tusiime Sewava

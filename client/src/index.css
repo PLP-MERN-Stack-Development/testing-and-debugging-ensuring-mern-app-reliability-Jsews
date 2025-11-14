@@ -1,0 +1,7 @@
+.btn-primary { background: #0b74de; color: white; padding: 6px 10px; border-radius: 4px; }
+.btn-secondary { background: #6c757d; color: white; padding: 6px 10px; border-radius: 4px; }
+.btn-danger { background: #dc3545; color: white; padding: 6px 10px; border-radius: 4px; }
+.btn-sm { font-size: 12px; padding: 4px 8px; }
+.btn-md { font-size: 14px; padding: 6px 10px; }
+.btn-lg { font-size: 16px; padding: 8px 12px; }
+.btn-disabled { opacity: 0.6; pointer-events: none; }

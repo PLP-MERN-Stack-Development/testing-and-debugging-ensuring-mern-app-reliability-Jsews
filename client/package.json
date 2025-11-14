@@ -1,0 +1,32 @@
+{
+  "name": "mern-bug-tracker-client",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom --watchAll=false",
+    "build": "react-scripts build"
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "jest-environment-jsdom": "^30.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -133,7 +133,7 @@ client/src/components/ErrorBoundary.jsx
 
 📝 Testing Coverage
 
-You must include:
+Includes:
 
 Backend: Unit + integration tests
 
@@ -151,7 +151,7 @@ npm test -- --coverage
 
 📸 Include Screenshots
 
-Add screenshots of:
+Added screenshots of:
 
 Passing test cases
 
